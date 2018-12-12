@@ -12,7 +12,6 @@
     "linter": "eslint src",
     "bundlesize": "bundlesize",
     "precommit": "eslint src --quiet",
-    "test": "mocha test/*.js"
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
