@@ -15,8 +15,8 @@
     "client": "webpack --watch --progress",
     "linter": "eslint src",
     "bundlesize": "bundlesize",
-    "precommit": "eslint src --quiet",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "precommit": "eslint src --quiet"
+
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
