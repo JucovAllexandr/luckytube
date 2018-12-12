@@ -32,7 +32,7 @@ app.get( "/*", ( req, res ) => {
             .map( comp => store.dispatch( comp.serverFetch( ) ) ); // dispatch data requirement
 
     Promise.all( dataRequirements ).then( ( ) => {
-        const jsx = (
+        let jsx = (
             <ReduxProvider store={ store }>
                 <StaticRouter context={ context } location={ req.url }>
                     <HomeLayout />        
